@@ -58,18 +58,4 @@ Hyperparameter tuning for the XGBoost model is conducted using a grid search. Th
 
 The best model achieved an accuracy of approximately 75% on the test set. Detailed metrics for precision, recall, and F1 score for each class are documented in the `Results.xlsx` file.
 
-## Pickle File
-
-The trained XGBoost model is saved as a pickle file (`xgboost_model.pkl`) for future use. This allows for easy loading and prediction on new data without retraining the model.
-
-```python
-import pickle
-
-# Save the model
-with open('xgboost_model.pkl', 'wb') as file:
-    pickle.dump(model, file)
-
-# Load the model
-with open('xgboost_model.pkl', 'rb') as file:
-    loaded_model = pickle.load(file)
 ```
